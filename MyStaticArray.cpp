@@ -2,17 +2,13 @@
 // Programmer's ID: 1553428
 
 #include <iostream>
-#include <iterator>
 #include <string>
-#include <sstream>
-#include <vector>
+
 using namespace std;
 
 #include<cstdlib>
 
 #include "StaticArray.h"
-
-vector<string> parseString(string);
 
 const bool PLACED = true;
 
@@ -27,7 +23,6 @@ int main(){
   int storeTotal = 0;
   string index;
   string value;
-  vector<string> tokens;
 
   do{
     cout << "Input an index and a value [Q to quit]: ";
@@ -71,10 +66,4 @@ int main(){
       cout << "I didn't find it\n";
     }
   }while(index != "Q" || index != "q");
-}
-
-vector<string> parseString(string str){
-  stringstream s(str);
-  istream_iterator<string> begin(s), end;
-  return vector<string>(begin, end);
 }

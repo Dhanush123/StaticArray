@@ -4,9 +4,6 @@
 #ifndef StaticArray_h
 #define StaticArray_h
 
-#include <vector>
-using namespace std;
-
 template <typename V, int CAP>
 class StaticArray
 {

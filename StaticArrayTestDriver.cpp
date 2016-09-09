@@ -2,7 +2,6 @@
 // Programmer's ID: 1553428
 
 #include <iostream>
-#include <vector>
 using namespace std;
 
 #include<cassert>
@@ -10,7 +9,7 @@ using namespace std;
 #include "StaticArray.h"
 #include "StaticArray.h"
 
-int main2(){
+int main(){
   cout << "Programmer: Dhanush Patel\n";
   cout << "Programmer's ID: 1553428\n";
   cout << "File: " << __FILE__ << endl;
